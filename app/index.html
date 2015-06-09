@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>picture</title>
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<!-- build:css styles/vendor.css -->
+	<!-- bower:css -->
+	<!-- endbower -->
+	<!-- endbuild -->
+
+	<!-- build:css styles/main.css -->
+	<link rel="stylesheet" href="styles/main.css">
+	<!-- endbuild -->
+</head>
+<body>
+	<picture>
+		<!-- Add Fallback for IE9 -->
+		<!--[if IE 9]><video style="display: none;"><![endif]-->
+		    <source srcset="images/1040_500.png"
+		         media="(min-width: 1040px)">
+		    <source srcset="images/840_500.png"
+		         media="(min-width: 840px)">
+		    <source srcset="images/640_500.png"
+		         media="(min-width: 640px)">
+		    <source srcset="images/480_400.png"
+		         media="(min-width: 480px)">
+		    <source srcset="images/320_400.png"
+		         media="(min-width: 320px)">
+		<!--[if IE 9]></video><![endif]-->
+		<!-- Add <img> fallback -->
+		<img srcset="images/640_500.png"
+		    alt="Hey Listen! Turn on your Javascript to view the placeholder!">
+	</picture>
+
+
+	<!-- build:js scripts/vendor.js -->
+	<!-- bower:js -->
+	<script src="/bower_components/picturefill/dist/picturefill.js"></script>
+	<!-- endbower -->
+	<!-- endbuild -->
+
+	<!-- build:js scripts/main.js -->
+	<script src="scripts/main.js"></script>
+	<!-- endbuild -->
+</body>
+</html>

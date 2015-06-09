@@ -1,0 +1,7 @@
+{
+  "name": "picture",
+  "private": true,
+  "dependencies": {
+    "picturefill": "~2.3.1"
+  }
+}
